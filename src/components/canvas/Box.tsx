@@ -34,7 +34,7 @@ const BoxComponent = () => {
 	useFrame(() => {
 		if (open) {
 			//@ts-ignore
-			// lidRef.current.material.transparent = false;
+			lidRef.current.material.transparent = false;
 
 			lidRef.current.rotation.x = lerp(
 				lidRef.current.rotation.x,
@@ -49,9 +49,9 @@ const BoxComponent = () => {
 		} else {
 			//! change this to apply transparency
 			//@ts-ignore
-			// lidRef.current.material.opacity = 0.5;
+			lidRef.current.material.opacity = 0.3;
 			//@ts-ignore
-			// lidRef.current.material.transparent = true;
+			lidRef.current.material.transparent = true;
 
 			lidRef.current.rotation.x = lerp(lidRef.current.rotation.x, 0, 0.1);
 			hingeRef.current.rotation.x = lerp(
